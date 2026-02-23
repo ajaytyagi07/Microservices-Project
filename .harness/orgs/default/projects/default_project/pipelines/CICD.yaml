@@ -40,7 +40,7 @@ pipeline:
                     connectorRef: DockerHub
                     repo: " ajaytyagi0120118/nodejs-helloworld"
                     tags:
-                      - v1
+                      - latest
         delegateSelectors:
           - docker-delegate
         sendGitStatus:
