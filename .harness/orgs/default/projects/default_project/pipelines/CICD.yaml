@@ -38,7 +38,7 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: DockerHub
-                    repo: " ajaytyagi0120118/nodejs-helloworld"
+                    repo: ajaytyagi0120118/microservices-project
                     tags:
                       - latest
         delegateSelectors:
