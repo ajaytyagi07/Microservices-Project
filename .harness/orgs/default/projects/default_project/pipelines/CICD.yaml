@@ -19,10 +19,11 @@ pipeline:
         spec:
           cloneCodebase: true
           caching:
-            enabled: true
+            enabled: false
             override: true
+            paths: []
           buildIntelligence:
-            enabled: true
+            enabled: false
           platform:
             os: Windows
             arch: Amd64
@@ -41,8 +42,8 @@ pipeline:
                     repo: ajaytyagi0120118/microservices-project
                     tags:
                       - latest
-        delegateSelectors:
-          - docker-delegate
         sendGitStatus:
           enabled: false
           name: ""
+        delegateSelectors:
+          - docker-delegate
